@@ -3,9 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { MarkDownDirective } from './markdown.directive';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarkDownDirective
   ],
   imports: [
     BrowserModule

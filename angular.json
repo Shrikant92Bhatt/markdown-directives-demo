@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shrikant-interview-test"
+    }
+  },
+  "defaultProject": "shrikant-interview-test",
+  "cli": {
+    "analytics": "98800bb0-b9c9-4cda-89a4-b75d506f5964"
+  }
 }

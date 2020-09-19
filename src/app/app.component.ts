@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'shrikant-interview-test';
+  public defaultValue: string = "";
+  public priviewhtml: string;
+  @ViewChild('priview') priview: ElementRef;
+  @ViewChild('markdown') markdown: ElementRef;
+
+
+  constructor () { }
+
+  onValueChange(event) {
+    this.priviewhtml = event.html;
+    this.priview.nativeElement.innerHTML = event.html;
+    this.markdown.nativeElement.innerHTML = event.input;
+  }
 }
